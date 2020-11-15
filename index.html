@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>ArraMon</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-container">
+				<div class="header-content">
+					<div class="header-name">
+						ArraMon / ऐरेमौन
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="main-header">
+				<div class="main-header-content">
+					<img src="logo.png" alt="ArraMon Logo">
+					<br><br>
+					<div class="title">
+						ArraMon: A Joint Navigation-Assembly Instruction Interpretation Task in Dynamic Environments
+					</div>
+				</div>
+			</div>
+			<div class="main-content-left">
+				<div class="content-section">
+					<div class="content-header">
+						What is ArraMon?
+					</div>
+					<div class="content-text">
+						<div style="text-align:left;">
+							ArraMon (Poke<b>Mon</b> + <b>Arra</b>ngement) is a new task/dataset for learning navigation+assembling guided by natural language instructions.
+							The agents in the ArraMon task should develop integrated abilities to map directional phrases in the instruction to actions in a
+							3D egocentric environment as well as understand object referring expressions to perform the task successfully.
+						</div>
+						<br><br>
+						<div class="gif-container">
+							<div class="gif">
+								<img src="final_gif.gif" alt="ArraMon Gif">
+							</div>
+							<!--<div class="english">
+								<div class="gif-header">
+									Demo Gif (English):
+								</div>
+								<img src="english_final_compressed.gif" alt="ArraMon English Gif">
+							</div>
+							<div class="hindi">
+								<div class="gif-header">
+									Demo Gif (Hindi):
+								</div>
+								<img src="hindi_final_compressed.gif" alt="ArraMon Hindi Gif">
+							</div>-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-content-right">
+				<div class="content-section">
+					<div class="content-header">
+						Paper / Code / Dataset
+					</div>
+					<div class="content-text">
+						Please see our EMNLP Findings Paper.<br><br>
+						<a style="text-decoration:none;" href="https://arxiv.org/abs/2011.07660">
+							<div class="button">
+								<div class="button-content">
+									Paper
+								</div>
+							</div>
+						</a>
+						<br>
+						Please see our Github page for the code/dataset and how to get started.<br><br>
+						<a style="text-decoration:none;" href="https://github.com/hyounghk/ArraMon">
+							<div class="button">
+								<div class="button-content">
+									Github
+								</div>
+							</div>
+						</a>
+						<br>
+						<div style="color:#cf0000;">
+							We have also added Hindi instructions (val seen and unseen splits released, training+test splits coming soon).
+						</div>
+					</div>
+				</div>
+				<!--<div class="content-section">
+					<div class="content-header">
+						Evaluation
+					</div>
+					<div class="content-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel felis arcu. Nullam velit mi, feugiat et venenatis eu,
+						elementum eu quam. Aenean viverra sapien ac mauris convallis, at malesuada lorem ultricies. Nulla pulvinar purus et tristique
+						congue. Nam tortor nunc, laoreet sed accumsan vel, tempus eget orci. Cras elementum pellentesque tortor non tempus. Nunc
+						malesuada libero at sapien suscipit suscipit. Donec nisl odio, eleifend euismod neque vitae, volutpat 	scelerisque nibh.
+						Proin egestas ut libero cursus lobortis. Nulla facilisi.
+					</div>
+				</div>-->
+				<div class="content-section">
+					<div class="content-header">
+						Citation
+					</div>
+					<div class="content-text">
+						If you use ArraMon please cite our paper with this BibTeX entry.
+						<br><br>
+						<div class="code-container">
+							<code>
+								@inproceedings{Kim2020ArraMonAJ,<br>
+									&nbsp;&nbsp;title={ArraMon: A Joint Navigation-Assembly Instruction Interpretation Task in Dynamic Environments},<br>
+									&nbsp;&nbsp;author={Hyounghun Kim and Abhaysinh Zala and Graham Burri and Hao Tan and Mohit Bansal},<br>
+									&nbsp;&nbsp;booktitle={Findings of EMNLP},<br>
+									&nbsp;&nbsp;year={2020}<br>
+								}
+							</code>
+						</div>
+					</div>
+				</div>
+				<div class="content-section">
+					<div class="content-header">
+						Leaderboard
+					</div>
+					<div class="content-text">
+						<div class="contact">
+							Please contact arramonunc@gmail.com for the test-unseen split.
+						</div>
+						<div class="leaderboard-container">
+							<table class="leaderboard-table">
+								<thead>
+									<tr>
+										<th class="theader" rowspan="2">Rank</th>
+										<th class="theader" rowspan="2">Model</th>
+										<th class="theader" rowspan="2">Code</th>
+										<th class="theader" rowspan="2">nDTW</th>
+										<th class="theader" colspan="4">CTC</th>
+										<th class="theader" rowspan="2">rPOD</th>
+										<th class="theader" rowspan="2">PTC</th>
+									</tr>
+									<tr>
+										<th class="theader">k=0</th>
+										<th class="theader">k=3</th>
+										<th class="theader">k=5</th>
+										<th class="theader">k=7</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tdata">
+											1
+											<br>
+											June 1st, 2020
+										</td>
+										<td class="tdata">
+											Baseline Model
+											<br>
+											UNC Chapel Hill
+											<br>
+											<a href="https://arxiv.org/abs/2011.07660">(Kim, Zala, et al. 2020)</a>
+										</td>
+										<td class="tdata">
+											<a href="https://github.com/hyounghk/ArraMon">Github</a>
+										</td>
+										<td class="tdata">0.114</td>
+										<td class="tdata">0.000</td>
+										<td class="tdata">0.082</td>
+										<td class="tdata">0.122</td>
+										<td class="tdata">0.168</td>
+										<td class="tdata">0.047</td>
+										<td class="tdata">0.035</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<br><br><br><br><br>
+			</div>
+		</div>
+	</body>
+</html>
